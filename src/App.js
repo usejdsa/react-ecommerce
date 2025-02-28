@@ -6,7 +6,6 @@ import ProductDetail from './components/ProductDetail/ProductDetail'
 import Cart from './components/Cart/Cart'
 import Login from './components/LoginForm/Login'
 import Header from './components/Shared/Header'
-import Footer from './components/Shared/Footer'
 
 function App() {
 
@@ -72,7 +71,6 @@ function App() {
           AddCartItem={AddCartItem}
           cart={cart} />} />
       </Routes>
-      <Footer />
     </div>
   );
 }

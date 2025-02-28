@@ -13,7 +13,7 @@ function ProductDetail({ AddCartItem, cart }) {
 
     const isProductInCart = !!cart.find(p => p.id == id);
 
-    return (<div className='flex items-center justify-center h-[83.2vh]'>
+    return (<div className='flex items-center justify-center'>
         <div className='flex flex-col sm:flex-row sm:px-10 px-4 py-10 gap-4'>
             <img src={`/react-ecommerce/images/${product.imageUrl}`} className='w-full max-h-[60vh] object-contain' />
             <div className='flex flex-col justify-around sm:w-1/2'>

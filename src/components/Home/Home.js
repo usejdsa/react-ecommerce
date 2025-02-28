@@ -32,7 +32,7 @@ function Home({ products, categories, searchQuery }) {
     };
 
 
-    return (<div className="h-[105vh] flex flex-col">
+    return (<div className="h-screen flex flex-col">
 
         <div className="flex">
             <div className="h-3/4 bg-gray-100 sticky top-0 bottom-0 hidden md:block xl:block ">

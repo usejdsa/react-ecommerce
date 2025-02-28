@@ -17,7 +17,7 @@ function Cart({ cart, RemoveItem, setCart, setItemNumber }) {
     }
 
     return (
-        <div className='flex flex-col sm:px-10 px-4 py-10 gap-4 mb-32'>
+        <div className='flex flex-col sm:px-10 px-4 py-10 gap-4'>
             <h1 className='text-2xl font-bold text-indigo-900'>Your Cart</h1>
             {cart.length === 0 ? (
                 <p>Your cart is empty</p>
