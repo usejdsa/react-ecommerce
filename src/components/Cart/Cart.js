@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 
 function Cart({ cart, RemoveItem, setCart, setItemNumber }) {
     const [orderPlaced, setOrderPlaced] = useState(false);
 
     let totalPrice = 0;
+
     cart.forEach(item => {
         totalPrice += item.price;
     });
@@ -20,7 +21,7 @@ function Cart({ cart, RemoveItem, setCart, setItemNumber }) {
         <div className='flex flex-col sm:px-10 px-4 py-10 gap-4'>
             <h1 className='text-2xl font-bold text-indigo-900'>Your Cart</h1>
             {cart.length === 0 ? (
-                <p>Your cart is empty</p>
+                <p>Your cart is empty!</p>
             ) : (
                 <>
                     {cart.map((item, index) => (
